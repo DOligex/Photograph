@@ -1,11 +1,17 @@
+/* ********* GLOBAL CSS ********** */
+/** ajout du GLOBAL CSS nounours72 **/
 * {
+  margin: 0;
+  padding: 0;
   box-sizing: border-box;
 }
 
+@import url("https://fonts.googleapis.com/css?family=Raleway&display=swap");
+
 body {
+  font-family: "Raleway", serif;
   margin: 0;
   padding: 0;
-  font-family: "Montserrat", sans-serif;
   color: #000;
 }
 
@@ -16,10 +22,12 @@ p {
 span {
   font-size: 15px;
 }
+
 .contenu p {
   text-align: center;
   font-size: 15px;
 }
+
 .contenu span {
   font-weight: bold;
 }
@@ -47,6 +55,13 @@ span {
   background: rgb(165, 165, 165);
   color: rgb(248, 248, 248);
 }
+.table{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
 
 .table {
   margin: 2px;
@@ -55,6 +70,7 @@ span {
   overflow: hidden;
   box-shadow: 0 0 10px #a9a9a9;
   /*height: 447px;*/
+
 }
 .table h3 {
   font-size: 30px;

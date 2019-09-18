@@ -4,15 +4,16 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <link rel="stylesheet" href="/style.css" />
+    <link rel="stylesheet" href="/style-body.css" />
     <link rel="stylesheet" href="/style-global.css" />
     <link rel="stylesheet" href="/style-header.css" />
     <link rel="stylesheet" href="/style-footer.css"/>
     <link rel="stylesheet" href="/style-tarif.css" />
 
-    <title>Timara Project - Header</title>
+    <title>Timara Project</title>
   </head>
   <body>
+<!-- start header -->
     <header>
       <nav class="main-nav">
         <ul class="main" id="globalNav" role="navigation">
@@ -20,9 +21,9 @@
             >&times;</a
           ><!--js nav-->
           <li class="current"><a href="#">accueil</a></li>
-          <li><a href="#">nos projets</a></li>
-          <li><a href="#">tarifs</a></li>
-          <li><a href="#">notre agence</a></li>
+          <li><a href="#ourprojects">nos projets</a></li><!--ajout de l'ancre nounours72-->
+          <li><a href="#prices">tarifs</a></li><!--ajout de l'ancre nounours72-->
+          <li><a href="#footerpart">notre agence</a></li><!--ajout de l'ancre nounours72-->
         </ul>
         <span class="btn-main">
           <a href="#" class="btn-contact">contactez-nous &#8594; </a>
@@ -31,20 +32,15 @@
       </nav>
     </header>
 
-    <!--end header-->
-    <!--start main container body-->
-
-    <!-- header merge part check -->
-    <!--start main container body-->
+<!--end header-->
+<!--start main container body-->
+<!-- header merge part check -->
 
     <section>
-      <div class="carousel"></div>
-    </section>
-    <section class="aboutus">
-      <h1 class="aboutustitle">TIMARA</h1>
-      <p class="aboutussubtitle">
-        PHOTOGRAPHE DE MARIAGE CEREMONIE ET RECEPTION
-      </p>
+      <div class="carousel">
+        <h1 class="aboutustitle">TIMARA</h1>
+        <p class="aboutussubtitle">PHOTOGRAPHE DE MARIAGE CEREMONIE ET RECEPTION</p>
+      </div>
     </section>
     <section class="aboutusunderpart1">
       <article>
@@ -73,7 +69,7 @@
         />
       </article>
     </section>
-    <section class="projects">
+    <section id="ourprojects"> <!--ajout de l'ancre nounours72-->
       <h2 class="projectstitle">NOS DIFFERENTS PROJETS</h2>
     </section>
     <section class="projectspart1">
@@ -100,17 +96,20 @@
         <p class="pictitle">ARTISTIQUE</p>
       </article>
     </section>
-    <!--end main container body-->
-    <!-- body merge part check -->
-   <!--start prices-->
-   <div class="contenu">
+
+<!--end main container body-->
+<!-- body merge part check -->
+<!--start prices-->
+
+    <div id="prices"></div><!--ajout de la div="prices" nounours72-->
+    <div class="contenu">
     <p>
         Ces forfaits sont des exemples courants de prestations. <span> <br> Toutes demandes sont négociables </span>
         et font l’objet de devis personnalisés.
         Forfaits à partir de 600 € - <span> Demande de Tarif : CONTACT </span>
     </p>
-</div>
-<div class="pricing-table">
+  </div>
+  <div class="pricing-table">
    
     <div class="col">
         <div class="table">
@@ -189,7 +188,7 @@
 
     </div>
     
-        <div class="col">
+        <div class="col1"><!-- modification de la class="col" en class="col1" pour casser la mise en forme et centrer la box nounours72 -->
         <div class="table">
 
             <h3>Option livre prestige</h3>
@@ -214,12 +213,10 @@
     </p>
 </div>
 
-
-
 <!--end prices-->
+<!--start footer-->
 
-     <!--start footer-->
-     <footer>
+     <footer id="footerpart">
       <div class="footer-section">
           <div class="container">
               <a href="#" class="title" target="_blank" title="Link to about us">Timara</a>
@@ -246,7 +243,9 @@
           </div>
       </div>
   </footer>
-  <!--end footer-->
+
+<!--end footer-->
+
 </body>
 
 </html>
