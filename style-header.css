@@ -1,0 +1,170 @@
+/* ********* HEADER CSS ********** */
+
+nav {
+  width: 100%;
+  background-color: black;
+  height: 6em;
+  display: flex;
+  align-items: center;
+  text-transform: uppercase;
+}
+
+ul {
+  list-style: none;
+  color: white;
+  display: flex;
+  align-items: center;
+  margin-left: 5%;
+}
+
+li {
+  padding: 0 3em;
+  flex-direction: row;
+  font-size: 1em;
+}
+
+a {
+  text-decoration: none;
+  letter-spacing: 1px;
+  color: white;
+}
+
+/*BORDER EFFECT*/
+
+.main * {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  -webkit-transition: all 0.35s ease;
+  transition: all 0.35s ease;
+}
+.main li {
+  display: inline-block;
+  list-style: outside none none;
+  margin: 0 1em;
+  padding: 0;
+}
+.main a {
+  padding: 0.5em 0.8em;
+  margin: 0.2em 0;
+  display: block;
+  color: rgba(255, 255, 255, 0.5);
+  position: relative;
+  text-decoration: none;
+}
+.main a:before,
+.main a:after {
+  height: 14px;
+  width: 14px;
+  position: absolute;
+  content: "";
+  -webkit-transition: all 0.35s ease;
+  transition: all 0.35s ease;
+  opacity: 0;
+}
+.main a:before {
+  left: 0;
+  top: 0;
+  border-left: 3px solid #ffffff;
+  border-top: 3px solid #ffffff;
+  -webkit-transform: translate(100%, 50%);
+  transform: translate(100%, 50%);
+}
+.main a:after {
+  right: 0;
+  bottom: 0;
+  border-right: 3px solid red;
+  border-bottom: 3px solid red;
+  -webkit-transform: translate(-100%, -50%);
+  transform: translate(-100%, -50%);
+}
+.main a:hover,
+.main .current a {
+  color: #ffffff;
+}
+.main a:hover:before,
+.main .current a:before,
+.main a:hover:after,
+.main .current a:after {
+  -webkit-transform: translate(0%, 0%);
+  transform: translate(0%, 0%);
+  opacity: 1;
+}
+
+/*end of effect border*/
+
+/*BUTTON*/
+
+.btn-main {
+  display: flex;
+  justify-content: flex-end;
+  flex: 1;
+  margin-right: 5%;
+}
+
+.btn-contact {
+  display: flex;
+  justify-content: center;
+  width: 30%;
+  padding: 0.5em 1em;
+  border-radius: 4em;
+  font-size: 1em;
+  font-family: inherit;
+  background-color: #fdf0eb;
+  font-weight: 600;
+  color: black;
+}
+
+.btn-contact:hover {
+  color: white;
+  background-color: black;
+  transition: all 0.35s ease;
+  border: 2px solid #fdf0eb;
+}
+
+/*à ajouter sur mobile
+.closebtn {
+  
+  display: none;
+}*/
+
+/* *********** MOBILE VERSION : 670px *********** */
+
+@media screen and (max-width: 670px) {
+  .main-nav {
+    display: flex;
+    flex-direction: column;
+    align-items: inherit;
+    background-color: black;
+    height: auto;
+  }
+
+  .main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 4em 0 3em 0;
+    font-size: 1.7em;
+    margin-left: 0;
+  }
+
+  li {
+    display: flex;
+    align-items: center;
+  }
+
+  a {
+    color: #ffffff;
+  }
+
+  .btn-main {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    margin-bottom: 30%;
+  }
+
+  .btn-contact {
+    width: auto;
+    font-size: 1.7em;
+  }
+}

@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" href="/style-global.css" />
+    <link rel="stylesheet" href="/style-header.css" />
+    <link rel="stylesheet" href="/style-contact.css" />
+
+    <title>Timara Project - contact</title>
+  </head>
+  <body>
+    <header>
+      <nav class="main-nav">
+        <ul class="main" role="navigation">
+          <li class="current"><a href="#">accueil</a></li>
+          <li><a href="#">nos projets</a></li>
+          <li><a href="#">tarifs</a></li>
+          <li><a href="#">notre agence</a></li>
+        </ul>
+        <span class="btn-main">
+          <a href="#" class="btn-contact">contactez-nous &#8594; </a>
+        </span>
+      </nav>
+    </header>
+
+    <!--end header-->
+    <!--start main container body contact-->
+
+    <section class="main-container-contact">
+      <section class="container-info">
+        <h1 class="title-contact">Vous avez un projet ? contactez-nous ?</h1>
+        <h2 class="explications-contact">
+          Nous réalisons un
+          <span class="line-decoration"> devis sur mesure</span> pour tous vos
+          évènements. Timara photographe se tient à votre disposition pour
+          répondre à vos questions. Remplissez le formulaire et nous vous
+          contacterons dans les <span class="timing">24h</span> !
+        </h2>
+      </section>
+
+
+      <section class="form-section"><!--start section form-section-->
+        <div class="container-lg"><!--start container-lg-->
+          <div class="form-column"><!--start form-column-->
+                <div class="form-container"><!--start form-container-->
+                    <form action="#" method="POST"><!--start form-->
+                        <fieldset><!--start fieldset-->
+                        <!--firstname input-->
+                        <div class="form-row_text_firstname">
+                            <label class="firstname" for="firstname"
+                            >Votre prénom</label
+                            >
+                            <input
+                            id="firstname"
+                            type="text"
+                            placeholder="Greg"
+                            required
+                            />
+                        </div>
+
+                        <!--lastname input-->
+                        <div class="form-row_text_lastname">
+                            <label class="lastname" for="lastname">Votre nom</label>
+                            <input
+                            id="lastname"
+                            type="text"
+                            placeholder="Le Millionnaire"
+                            required
+                            />
+                        </div>
+
+                        <!--email input-->
+                        <div class="form-row_text_email">
+                            <label class="email" for="email">Votre email</label>
+                            <input
+                            id="email"
+                            type="text"
+                            placeholder="greglemillionaire@business.me"
+                            />
+                        </div>
+
+                        <!--Submit region-->
+                        <div class="form-row_select_region">
+                            <label class="region" for="region">Votre région</label>
+                            <div class="select-wrapper">
+                            <select id="region" name="region" required>
+                                <option value="0">Sélectionner une ville</option>
+                                <option value="1">Bordeaux</option>
+                                <option value="2">Biarritz</option>
+                                <option value="3">Saint-Jean de Luz</option>
+                                <option value="4">Angoulême</option>
+                            </select>
+                            </div>
+                        </div>
+
+                        <!--select price-->
+                        <div class="form-row_select_price">
+                            <label class="price_contain-summary" for="volume"
+                            >Quel est votre budget ?
+                            <!--<summary class="volume"
+                                >Nous adaptons nos prestations en fonction de vos
+                                budgets</summary>-->
+                            </label>
+                            <div class="select-wrapper">
+                            <select
+                                name="volume"
+                                id="volume"
+                                required
+                                class="invalid-missing"
+                            >
+                                <option selected disabled value
+                                >Sélectionnez votre budget</option
+                                >
+                                <option value="1">150€</option>
+                                <option value="2">250€</option>
+                                <option value="3">350€</option>
+                                <option value="4">500€</option>
+                                <option value="5">Autre</option>
+                            </select>
+                            </div>
+                        </div>
+
+                        <!--Textarea-->
+                        <div class="form-row_textarea">
+                            <label class="message-container" for="message">Quelque chose à ajouter ?</label>
+                            <textarea
+                            name="message"
+                            id="message"
+                            cols="30"
+                            rows="10"
+                            required
+                            placeholder="Parlez-nous de votre projet"
+                            class="message-type"
+                            ></textarea>
+                        </div>
+
+                        <!--Submit button-->
+                        <div class="submit">
+                            <input
+                            type="submit"
+                            class="submit-btn"
+                            value="Contactez-nous"
+                            />
+                        </div>
+                        </fieldset><!--end fieldset-->
+                    </form><!--end form-->
+                </div><!--end form-container-->
+          </div><!--end form-column-->
+          <div class="secondary-column">
+            <h2 class="headline-contact-photo">Quelque soit votre évènement, prenez un photographe !</h2>
+            <h3 class="headline-contact-quality">Un service de qualité pour des souvenirs inoubliables</h3>
+          </div>
+        </div><!--end container-lg-->
+      </section><!--start section form-section-->
+
+      <div class="container-polygon">
+      </div>
+
+  </body>
+</html>
