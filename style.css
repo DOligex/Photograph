@@ -23,7 +23,7 @@
     font-size: 1.2em;
 }
 .carousel{
-    background-image: url(images/timara1.jpg);
+    background-image: url(images/timara_symbol1.jpg);
     background-size: 100%;
     height: 200px;
     background-repeat: no-repeat;
@@ -63,22 +63,22 @@ article{
     margin-bottom: 10px;
 }
 .projectsimgpart1{
-    background-image: url(images/carousel1.jpg);
+    background-image: url(images/wedding1.jpg);
 }
 .projectsimgpart2{
     background-image: url(images/bar-mitzva1.jpg);
 }
 .projectsimgpart3{
-    background-image: url(images/bapteme1.jpg);
+    background-image: url(images/baptist1.jpg);
 }
 .projectsimgpart4{
-    background-image: url(images/party1.jpg);
+    background-image: url(images/corporate-event1.jpg);
 }
 .projectsimgpart5{
     background-image: url(images/lancernain1.jpg)
 }
 .projectsimgpart6{
-    background-image: url(images/city1.jpg)
+    background-image: url(images/photo-artistique1.jpg)
 }
 .projectstitle{
     font-weight: 1.5em;
