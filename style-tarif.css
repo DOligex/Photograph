@@ -1,17 +1,11 @@
-/* ********* GLOBAL CSS ********** */
-/** ajout du GLOBAL CSS nounours72 **/
 * {
-  margin: 0;
-  padding: 0;
   box-sizing: border-box;
 }
 
-@import url("https://fonts.googleapis.com/css?family=Raleway&display=swap");
-
 body {
-  font-family: "Raleway", serif;
   margin: 0;
   padding: 0;
+  font-family: 'Raleway', sans-serif;
   color: #000;
 }
 
@@ -22,12 +16,12 @@ p {
 span {
   font-size: 15px;
 }
-
 .contenu p {
   text-align: center;
-  font-size: 15px;
+  font-size: 16px;
+  padding-top: 20px;
+  padding-bottom: 20px;
 }
-
 .contenu span {
   font-weight: bold;
 }
@@ -45,22 +39,18 @@ span {
 
 .col {
   display: flex;
-  flex: 25%;
+  flex: 50%; /*passage de 25 a 50%*/
   padding: 10px;
   box-sizing: border-box;
   transition: 0.7s linear;
   color: #2c3e50;
 }
+.col1{ /*ajout class col1*/
+  width: 90%;
+  }
 .table:hover {
   background: rgb(165, 165, 165);
   color: rgb(248, 248, 248);
-}
-.table{
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
 }
 
 .table {
@@ -69,37 +59,50 @@ span {
   position: relative;
   overflow: hidden;
   box-shadow: 0 0 10px #a9a9a9;
-  /*height: 447px;*/
-
+  
 }
 .table h3 {
   font-size: 30px;
   text-transform: uppercase;
   text-align: center;
   color: #303036;
-  margin-top: 0;
+  margin-top: 20px;
   margin-bottom: 0;
-  text-shadow: 0.1em 0.1em 0.15em #293133;
 }
 .table p {
+  margin: 0 0 15px;
+  padding: 10px 0 20px;
   font-size: 15px;
   text-align: center;
   font-style: italic;
+  font-weight: bold;
 }
-.table span {
+.table p span {
   font-size: 15px;
   text-align: justify;
+  padding-left: 10px;
+  padding-right: 10px;
 }
 .table ul {
   font-size: 15px;
   padding-left: 10px;
   padding-right: 10px;
+  display: block;
+  margin-left: 0;
 }
 
 .table ul li {
   list-style: none;
   padding: 10px 0;
   text-align: center;
+}
+
+.forfait{
+  color: #000;
+}
+
+.forfait ul li {
+  color: #000;
 }
 .forfait li strong {
   text-transform: uppercase;
@@ -111,4 +114,14 @@ span {
     margin: 2px;
     height: auto;
   }
+
+  .table:hover {
+    background: rgb(165, 165, 165);
+    color: rgb(248, 248, 248);
+  }
+
+  .col {
+  flex: 25%;}
+
+
 }
