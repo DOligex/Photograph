@@ -15,7 +15,9 @@ body {
   color: #000;
 }
 
-
+.container{
+  color: #fff;
+}
 
 footer {
   background: linear-gradient(#696969, #A9A9A9);
@@ -33,10 +35,14 @@ footer a{
   align-content: stretch;
   margin: 1px;
   text-decoration: none;
-  color: #fff;
-  font-size: 15px;
+  color: #000;
+  font-size: 13px;
   letter-spacing: .1rem;
 }
+a .tel {
+  align-items: center;
+}
+
 .footer-section .title {
   text-transform: uppercase;
   letter-spacing: 1rem;
@@ -47,20 +53,31 @@ footer a{
 }
 .footer-section .sous-title {
   text-transform: uppercase;
-  font-size: 15px;
+  font-size: 13px;
   color: #404040;
+}
+
+.mentions {
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+
+.tel{
+  margin-top: 5px;
 }
 
 
 @media screen and (min-width: 961px) {
   footer {
-    margin: 2px;
+    margin: 0;
     height: auto;
   }
   .footer-section {
     display: flex;
+    margin-top: 10px;
     justify-content: space-around;
     align-items: center;
+    text-align: -webkit-center;
   }
   .container {
     display: inline-flex;

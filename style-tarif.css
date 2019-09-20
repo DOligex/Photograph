@@ -39,15 +39,21 @@ span {
 
 .col {
   display: flex;
-  flex: 50%; /*passage de 25 a 50%*/
+  flex: 50%;
   padding: 10px;
   box-sizing: border-box;
   transition: 0.7s linear;
   color: #2c3e50;
 }
-.col1{ /*ajout class col1*/
-  width: 90%;
-  }
+
+.col1{
+  width: 98%;
+  margin-top: 20px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  margin-left: 1%;
+}
+
 .table:hover {
   background: rgb(165, 165, 165);
   color: rgb(248, 248, 248);
@@ -55,11 +61,10 @@ span {
 
 .table {
   margin: 2px;
-  padding: 40px 20px;
+  padding: 20px 20px;
   position: relative;
   overflow: hidden;
   box-shadow: 0 0 10px #a9a9a9;
-  
 }
 .table h3 {
   font-size: 30px;
@@ -115,13 +120,28 @@ span {
     height: auto;
   }
 
+  .pricing-table {
+    max-width: 1200px;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+
   .table:hover {
     background: rgb(165, 165, 165);
     color: rgb(248, 248, 248);
   }
-
+  
+  .table {
+    margin: 2px;
+    padding: 20px 20px;
+    position: relative;
+    overflow: hidden;
+    box-shadow: 0 0 10px #a9a9a9;
+    
+  }
   .col {
-  flex: 25%;}
-
-
+    flex: 25%;
+  }
 }
