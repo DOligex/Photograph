@@ -1,182 +1,166 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <link rel="stylesheet" href="/style-contact.css" />
-    <link rel="stylesheet" href="/style-global.css" />
-    <link rel="stylesheet" href="/style-header.css" />
-
-    <title>Timara Project - Header</title>
-  </head>
-  <body>
-    <header>
-      <nav class="main-nav">
-        <div class="toggle">
-          <!--Responsive-->
-          <div class="name-work">timara photographe</div>
-          <i class="fas fa-bars menu"></i>
-        </div>
-        <ul class="main">
-          <li class="current"><a href="index.html">accueil</a></li>
-          <li><a href="index.html#ourprojects">nos projets</a></li>
-          <!--ajout de l'ancre nounours72-->
-          <li><a href="index.html#prices">tarifs</a></li>
-          <!--ajout de l'ancre nounours72-->
-          <li><a href="contact.html">contact</a></li>
-        </ul>
-      </nav>
-    </header>
-
-    <!--end header-->
-    <!--start main container body-->
-
-    <section class="main-container-contact">
-      <section class="container-info">
-        <h1 class="title-contact">Vous avez un projet ? contactez-nous ?</h1>
-        <h2 class="explications-contact">
-          Nous réalisons un
-          <span class="line-decoration"> devis sur mesure</span> pour tous vos
-          évènements. Timara photographe se tient à votre disposition pour
-          répondre à vos questions. Remplissez le formulaire et nous vous
-          contacterons dans les <span class="timing">24h</span> !
-        </h2>
-      </section>
-
-
-      <section class="form-section"><!--start section form-section-->
-        <div class="container-lg"><!--start container-lg-->
-          <div class="form-column"><!--start form-column-->
-                <div class="form-container"><!--start form-container-->
-                    <form action="#" method="POST"><!--start form-->
-                        <fieldset><!--start fieldset-->
-                        <!--firstname input-->
-                        <div class="form-row_text_firstname">
-                            <label class="firstname" for="firstname"
-                            >Votre prénom</label
-                            >
-                            <input
-                            id="firstname"
-                            type="text"
-                            placeholder="Greg"
-                            required
-                            />
-                        </div>
-
-                        <!--lastname input-->
-                        <div class="form-row_text_lastname">
-                            <label class="lastname" for="lastname">Votre nom</label>
-                            <input
-                            id="lastname"
-                            type="text"
-                            placeholder="Le Millionnaire"
-                            required
-                            />
-                        </div>
-
-                        <!--email input-->
-                        <div class="form-row_text_email">
-                            <label class="email" for="email">Votre email</label>
-                            <input
-                            id="email"
-                            type="text"
-                            placeholder="greglemillionaire@business.me"
-                            />
-                        </div>
-
-                        <!--Submit region-->
-                        <div class="form-row_select_region">
-                            <label class="region" for="region">Votre région</label>
-                            <div class="select-wrapper">
-                            <select id="region" name="region" required>
-                                <option value="0">Sélectionner une ville</option>
-                                <option value="1">Bordeaux</option>
-                                <option value="2">Biarritz</option>
-                                <option value="3">Saint-Jean de Luz</option>
-                                <option value="4">Angoulême</option>
-                            </select>
-                            </div>
-                        </div>
-
-                        <!--select price-->
-                        <div class="form-row_select_price">
-                            <label class="price_contain-summary" for="volume"
-                            >Quel est votre budget ?
-                            <!--<summary class="volume"
-                                >Nous adaptons nos prestations en fonction de vos
-                                budgets</summary>-->
-                            </label>
-                            <div class="select-wrapper">
-                            <select
-                                name="volume"
-                                id="volume"
-                                required
-                                class="invalid-missing"
-                            >
-                                <option selected disabled value
-                                >Sélectionnez votre budget</option
-                                >
-                                <option value="1">150€</option>
-                                <option value="2">250€</option>
-                                <option value="3">350€</option>
-                                <option value="4">500€</option>
-                                <option value="5">Autre</option>
-                            </select>
-                            </div>
-                        </div>
-
-                        <!--Textarea-->
-                        <div class="form-row_textarea">
-                            <label class="message-container" for="message">Quelque chose à ajouter ?</label>
-                            <textarea
-                            name="message"
-                            id="message"
-                            cols="30"
-                            rows="10"
-                            required
-                            placeholder="Parlez-nous de votre projet"
-                            class="message-type"
-                            ></textarea>
-                        </div>
-
-                        <!--Submit button-->
-                        <div class="submit">
-                            <input
-                            type="submit"
-                            class="submit-btn"
-                            value="Contactez-nous"
-                            />
-                        </div>
-                        </fieldset><!--end fieldset-->
-                    </form><!--end form-->
-                </div><!--end form-container-->
-          </div><!--end form-column-->
-          <div class="secondary-column">
-            <h2 class="headline-contact-photo">Quel que soit votre évènement, prenez un photographe !</h2>
-            <h3 class="headline-contact-quality">Un service de qualité pour des souvenirs inoubliables</h3>
-          </div>
-        </div><!--end container-lg-->
-      </section><!--start section form-section-->
-
-      <div class="container-polygon">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <link rel="stylesheet" href="style-contact.css" />
+  <link rel="stylesheet" href="style-global.css" />
+  <link rel="stylesheet" href="style-header.css" />
+  
+  <title>Tamara Project - Header</title>
+</head>
+<body>
+  <header>
+    <nav class="main-nav">
+      <div class="toggle">
+        <!--Responsive-->
+        <div class="name-work">tamara photographe</div>
+        <i class="fas fa-bars menu"></i>
       </div>
-
-    <!--script js menu-->
-
-      <script
-      src="https://kit.fontawesome.com/e886649724.js"
-      crossorigin="anonymous"
-    ></script>
-    <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
-    <script type="text/javascript">
-      $(document).ready(function() {
-        $(".menu").click(function() {
-          $("ul").toggleClass("active");
-        });
+      <ul class="main">
+        <li class="current"><a href="index.html">accueil</a></li>
+        <li><a href="index.html#ourprojects">nos projets</a></li>
+        <li><a href="index.html#prices">tarifs</a></li>
+        <li><a href="contact.html">contact</a></li>
+      </ul>
+    </nav>
+  </header>
+  
+  <!--end header-->
+  <!--start main container body-->
+  
+  <section class="main-container-contact">
+    <section class="container-info">
+      <h1 class="title-contact">Vous avez un projet ? contactez-nous !</h1>
+      <h2 class="explications-contact">
+        Nous réalisons un
+        <span class="line-decoration"> devis sur mesure</span> pour tous vos
+        évènements. Tamara photographe se tient à votre disposition pour
+        répondre à vos questions. Remplissez le formulaire et nous vous
+        contacterons dans les <span class="timing">24h</span> !
+      </h2>
+    </section>
+    
+    
+    <section class="form-section"><!--start section form-section-->
+      <div class="container-lg"><!--start container-lg-->
+        <div class="form-column"><!--start form-column-->
+          <div class="form-container"><!--start form-container-->
+            <form action="#" method="POST"><!--start form-->
+              <fieldset><!--start fieldset-->
+                <!--firstname input-->
+                <div class="form-row_text_firstname">
+                  <label class="firstname" for="firstname">Votre prénom</label>
+                  <input id="firstname" type="text" placeholder="Greg" required/>
+                </div>
+                
+                <!--lastname input-->
+                <div class="form-row_text_lastname">
+                  <label class="lastname" for="lastname">Votre nom</label>
+                  <input
+                  id="lastname"
+                  type="text"
+                  placeholder="Le Millionnaire"
+                  required
+                  />
+                </div>
+                
+                <!--email input-->
+                <div class="form-row_text_email">
+                  <label class="email" for="email">Votre email</label>
+                  <input
+                  id="email"
+                  type="text"
+                  placeholder="greglemillionaire@business.me"
+                  />
+                </div>
+                
+                <!--Submit region-->
+                <div class="form-row_select_region">
+                  <label class="region" for="region">Votre région</label>
+                  <div class="select-wrapper">
+                    <select id="region" name="region" required>
+                      <option value="0">Sélectionner une ville</option>
+                      <option value="1">Bordeaux</option>
+                      <option value="2">Biarritz</option>
+                      <option value="3">Saint-Jean de Luz</option>
+                      <option value="4">Angoulême</option>
+                    </select>
+                  </div>
+                </div>
+                
+                <!--select price-->
+                <div class="form-row_select_price">
+                  <label class="price_contain-summary" for="volume"
+                  >Quel est votre budget ?
+                  <!--<summary class="volume"
+                    >Nous adaptons nos prestations en fonction de vos
+                    budgets</summary>-->
+                  </label>
+                  <div class="select-wrapper">
+                    <select name="volume" id="volume" class="invalid-missing">
+                    <option selected disabled value>Sélectionnez votre budget</option>
+                    <option value="1">150€</option>
+                    <option value="2">250€</option>
+                    <option value="3">350€</option>
+                    <option value="4">500€</option>
+                    <option value="5">Autre</option>
+                  </select>
+                </div>
+              </div>
+              
+              <!--Textarea-->
+              <div class="form-row_textarea">
+                <label class="message-container" for="message">Quelque chose à ajouter ?</label>
+                <textarea name="message" id="message" cols="30" rows="10" placeholder="Parlez-nous de votre projet" class="message-type"></textarea>
+              </div>
+              
+              <!--Submit button-->
+              <div id="modal2" class="submit center">
+                <input type="submit" class="submit-btn" value="Contactez-nous" />
+              </div>  
+            </fieldset><!--end fieldset-->
+          </form><!--end form-->
+        </div><!--end form-container-->
+      </div><!--end form-column-->
+      <div class="secondary-column">
+        <h2 class="headline-contact-photo">Quel que soit votre évènement, prenez un photographe !</h2>
+        <h3 class="headline-contact-quality">Un service de qualité pour des souvenirs inoubliables</h3>
+      </div>
+    </div><!--end container-lg-->
+  </section><!--start section form-section-->
+  
+  <div class="container-polygon">
+  </div>
+  <p class="center">
+    <button id="open-modal-test">Test Modal</button>
+  </p>
+  <div id="modal" class="modal">
+    <div class="modal-inner content center">
+      <h2>Félicitations !</h2>
+      <p>Votre demande à été prise en compte. Cliquez à nouveau pour fermer.</p>
+      <button id="close-modal-test">Fermer</button>
+    </div>
+  </div>
+  
+  <!--script js menu start-->
+  
+  <script
+  src="https://kit.fontawesome.com/e886649724.js" crossorigin="anonymous"></script>
+  <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+  <script type="text/javascript">
+    $(document).ready(function() {
+      $(".menu").click(function() {
+        $("ul").toggleClass("active");
       });
-    </script>
-
-
-  </body>
+    });
+  </script>
+  <!-- script js menu end -->
+  <!-- script js modal start -->
+  
+  <script src="index1.js"></script>
+  <script src="index2.js"></script>
+  <!-- script js modal end -->
+</body>
 </html>

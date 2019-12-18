@@ -2,7 +2,7 @@ body {
   background-color: #f7fafc;
 }
 
-/* ****** text intro ******* */
+/* ************************** text intro **************************** */
 
 .main-container-contact {
   display: flex;
@@ -33,7 +33,8 @@ body {
   line-height: 1.8;
   color: #6b7c93;
 }
-- .line-decoration {
+
+.line-decoration {
   border-bottom: 4px solid #43446b;
 }
 
@@ -42,7 +43,7 @@ body {
   font-weight: 500;
 }
 
-/* ******** FORM SECTION ******** */
+/* ************************** form section **************************** */
 
 .form-section {
   margin-top: 1em;
@@ -72,7 +73,7 @@ fieldset {
   border-style: none;
 }
 
-/*firstname*/
+/* ************************** firstname **************************** */
 
 .form-row_text_firstname {
   display: flex;
@@ -103,7 +104,7 @@ fieldset {
   font-weight: 300;
 }
 
-/*lastname*/
+/* ************************** lastname **************************** */
 
 .form-row_text_lastname {
   display: flex;
@@ -135,7 +136,8 @@ fieldset {
   font-weight: 300;
 }
 
-/*email*/
+/* ************************** email **************************** */
+
 .form-row_text_email {
   display: flex;
   border-bottom: none;
@@ -166,7 +168,7 @@ fieldset {
   font-weight: 300;
 }
 
-/*region*/
+/* ************************** region **************************** */
 
 .form-row_select_region {
   display: flex;
@@ -198,7 +200,7 @@ fieldset {
   width: 100%;
 }
 
-/*price*/
+/* ************************** price **************************** */
 
 .form-row_select_price {
   display: flex;
@@ -230,7 +232,7 @@ fieldset {
   font-weight: 300;
 }
 
-/*textarea*/
+/* ************************** textarea **************************** */
 
 .form-row_textarea {
   display: flex;
@@ -265,7 +267,7 @@ textarea {
   font-weight: 300;
 }
 
-/*submit button*/
+/* ************************** submit button **************************** */
 
 .submit {
   display: flex;
@@ -285,8 +287,11 @@ textarea {
   background-color: #5fbb9b;
   color: white;
 }
+.submit-btn:hover{
+  background-color: #e61616;
+}
 
-/* ******* Second column ********* */
+/* ************************** Second column **************************** */
 
 .secondary-column {
   display: flex;
@@ -308,12 +313,44 @@ textarea {
   margin-top: 1em;
 }
 
-/******/
-
 .container-polygon {
   background: linear-gradient(to right, #43446b, #6b7c93);
   clip-path: polygon(0 57%, 100% 25%, 100% 100%, 0 100%);
   height: 50em;
   z-index: -300;
   margin-top: -12em;
+}
+
+/* ************************** css js part **************************** */
+
+.content {
+  max-width: 800px;
+  margin: 0 auto;
+  margin-bottom: 30px;
+  padding: 30px;
+  background: #fff;
+  border: 1px solid #ddd;
+}
+
+.center {
+  text-align: center;
+}
+
+button {
+  padding: 10px 20px;
+  background: #F76C6C;
+  color: #fff;
+  border: transparent;
+  border-radius: 4px;
+  font-size: 1.5rem;
+}
+
+.modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.7);
+  display: none;
 }
