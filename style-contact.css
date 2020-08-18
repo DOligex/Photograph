@@ -24,14 +24,14 @@ body {
   display: flex;
   justify-content: center;
   margin: 1.7em 0;
-  color: #43446b;
+  color: #000000;
 }
 
 .explications-contact {
   font-size: 1.3em;
   font-weight: 400;
   line-height: 1.8;
-  color: #6b7c93;
+  color: #000000;
 }
 
 .line-decoration {
@@ -73,15 +73,16 @@ fieldset {
   border-style: none;
 }
 
-/* ************************** firstname **************************** */
+/* ************************** form **************************** */
 
-.form-row_text_firstname {
+.form-row_text_firstname, .form-row_text_lastname, .form-row_text_email, .form-row_select_region, .form-row_select_price, .form-row_textarea  {
   display: flex;
   border-bottom: none;
-  max-width: 700px;
+  max-width: 600px;
+  margin-top: 1em;
 }
 
-.firstname {
+.firstname, .lastname, .email, .region, .price_contain-summary, .message-container {
   font-size: 1.1em;
   font-weight: 600;
   width: 70%;
@@ -89,7 +90,7 @@ fieldset {
   align-items: center;
 }
 
-#firstname {
+#firstname, #lastname, #email, #region, #volume, #message {
   width: 100%;
   height: 4em;
   border: none;
@@ -97,174 +98,23 @@ fieldset {
   background-color: #e0e0e0;
 }
 
-#firstname::placeholder {
-  font-size: 1.3em;
-  padding: 1em;
+#region, #volume {
+  font-size: 1.1em;
+  padding: 0.8em; 
   color: #71717e;
   font-weight: 300;
-}
-
-/* ************************** lastname **************************** */
-
-.form-row_text_lastname {
-  display: flex;
-  border-bottom: none;
-  max-width: 600px;
-  margin-top: 1em;
-}
-
-.lastname {
-  font-size: 1.1em;
-  font-weight: 600;
-  width: 70%;
-  display: flex;
-  align-items: center;
-}
-
-#lastname {
-  width: 100%;
-  height: 4em;
-  border: none;
-  border-radius: 0.4em;
-  background-color: #e0e0e0;
-}
-
-#lastname::placeholder {
-  font-size: 1.3em;
-  padding: 1em;
-  color: #71717e;
-  font-weight: 300;
-}
-
-/* ************************** email **************************** */
-
-.form-row_text_email {
-  display: flex;
-  border-bottom: none;
-  max-width: 600px;
-  margin-top: 1em;
-}
-
-.email {
-  font-size: 1.1em;
-  font-weight: 600;
-  width: 70%;
-  display: flex;
-  align-items: center;
-}
-
-#email {
-  width: 100%;
-  height: 4em;
-  border: none;
-  border-radius: 0.4em;
-  background-color: #e0e0e0;
-}
-
-#email::placeholder {
-  font-size: 1.3em;
-  padding: 1em;
-  color: #71717e;
-  font-weight: 300;
-}
-
-/* ************************** region **************************** */
-
-.form-row_select_region {
-  display: flex;
-  border-bottom: none;
-  max-width: 600px;
-  margin-top: 1em;
-}
-
-.region {
-  font-size: 1.1em;
-  font-weight: 600;
-  width: 70%;
-  display: flex;
-  align-items: center;
-}
-
-#region {
-  width: 100%;
   height: 3em;
-  background-color: #e0e0e0;
-  border: none;
-  font-size: 0.9em;
-  padding: 0.8em;
+}
+
+#lastname::placeholder, #firstname::placeholder, #email::placeholder, #message::placeholder  {
+  font-size: 1.3em;
+  padding: 1em;
   color: #71717e;
   font-weight: 300;
 }
 
 .select-wrapper {
   width: 100%;
-}
-
-/* ************************** price **************************** */
-
-.form-row_select_price {
-  display: flex;
-  border-bottom: none;
-  max-width: 600px;
-  margin-top: 1em;
-}
-
-.price_contain-summary {
-  width: 70%;
-  font-size: 1.1em;
-  font-weight: 600;
-  display: flex;
-  align-items: center;
-}
-
-.select-wrapper {
-  width: 100%;
-}
-
-#volume {
-  width: 100%;
-  height: 3em;
-  background-color: #e0e0e0;
-  border: none;
-  font-size: 0.9em;
-  padding: 0.8em;
-  color: #71717e;
-  font-weight: 300;
-}
-
-/* ************************** textarea **************************** */
-
-.form-row_textarea {
-  display: flex;
-  border-bottom: none;
-  max-width: 600px;
-  margin-top: 1em;
-  max-width: 600px;
-}
-
-.message-container {
-  width: 70%;
-  font-size: 1.1em;
-  font-weight: 600;
-  display: flex;
-  align-items: center;
-}
-
-textarea {
-  width: 100%;
-  border: none;
-  background-color: #e0e0e0;
-  font-size: 0.8em;
-  color: black;
-  font-weight: 300;
-  border-radius: 0.2em;
-}
-
-#message::placeholder {
-  font-size: 1.3em;
-  padding: 1em;
-  color: #71717e;
-  font-weight: 300;
 }
 
 /* ************************** submit button **************************** */
@@ -288,7 +138,8 @@ textarea {
   color: white;
 }
 .submit-btn:hover{
-  background-color: #e61616;
+  background-color: #0faf00;
+  cursor: pointer;
 }
 
 /* ************************** Second column **************************** */
@@ -301,24 +152,22 @@ textarea {
 }
 
 .headline-contact-photo {
-  color: white;
+  color: #000000;
   font-size: 1.4em;
   font-weight: 400;
 }
 
 .headline-contact-quality {
-  color: white;
+  color: #000000;
   font-size: 1.1em;
   font-weight: 400;
   margin-top: 1em;
 }
 
 .container-polygon {
-  background: linear-gradient(to right, #43446b, #6b7c93);
-  clip-path: polygon(0 57%, 100% 25%, 100% 100%, 0 100%);
   height: 50em;
   z-index: -300;
-  margin-top: -12em;
+  margin-top: -20em;
 }
 
 /* ************************** css js part **************************** */
@@ -334,23 +183,4 @@ textarea {
 
 .center {
   text-align: center;
-}
-
-button {
-  padding: 10px 20px;
-  background: #F76C6C;
-  color: #fff;
-  border: transparent;
-  border-radius: 4px;
-  font-size: 1.5rem;
-}
-
-.modal {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background: rgba(0, 0, 0, 0.7);
-  display: none;
 }
