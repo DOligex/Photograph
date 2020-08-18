@@ -27,26 +27,26 @@ for (const d of data1) {
     <h2 class="projectstitle">NOS DIFFERENTS PROJETS</h2>
     <section class="projectspart1">
     <article class="projectsimgpart1">
-    <p class="pictitle">MARIAGE</p>
+    <p class="pictitle">Mariage</p>
     </article>
     <article class="projectsimgpart2">
-    <p class="pictitle">BAR-MITZVA</p>
+    <p class="pictitle">Bar Mitzvah</p>
     </article>
     </section>
     <section class="projectspart2">
     <article class="projectsimgpart3">
-    <p class="pictitle">BAPTEME</p>
+    <p class="pictitle">Baptême</p>
     </article>
     <article class="projectsimgpart4">
-    <p class="pictitle">SOIREE ENTRE AMIS</p>
+    <p class="pictitle">Soirée entre amis</p>
     </article>
     </section>
     <section class="projectspart3">
     <article class="projectsimgpart5">
-    <p class="pictitle">SOIREE D'ENTREPRISE</p>
+    <p class="pictitle">Soirée d'entreprise</p>
     </article>
     <article class="projectsimgpart6">
-    <p class="pictitle">ARTISTIQUE</p>
+    <p class="pictitle">Artistique</p>
     </article>
     </section>
     `

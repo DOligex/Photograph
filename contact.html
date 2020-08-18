@@ -81,11 +81,13 @@
                   <label class="region" for="region">Votre région</label>
                   <div class="select-wrapper">
                     <select id="region" name="region" required>
-                      <option value="0">Sélectionner une ville</option>
-                      <option value="1">Bordeaux</option>
-                      <option value="2">Biarritz</option>
-                      <option value="3">Saint-Jean de Luz</option>
-                      <option value="4">Angoulême</option>
+                      <option selected disabled value>Sélectionner une ville</option>
+                      <option value="1">Montréal</option>
+                      <option value="2">New york</option>
+                      <option value="3">Paris</option>
+                      <option value="4">Bordeaux</option>
+                      <option value="5">Toronto</option>
+                      <option value="6">Québec</option>
                     </select>
                   </div>
                 </div>
@@ -94,12 +96,10 @@
                 <div class="form-row_select_price">
                   <label class="price_contain-summary" for="volume"
                   >Quel est votre budget ?
-                  <!--<summary class="volume"
-                    >Nous adaptons nos prestations en fonction de vos
-                    budgets</summary>-->
-                  </label>
-                  <div class="select-wrapper">
-                    <select name="volume" id="volume" class="invalid-missing">
+                </label>
+                
+                <div class="select-wrapper">
+                  <select name="volume" id="volume" class="invalid-missing">
                     <option selected disabled value>Sélectionnez votre budget</option>
                     <option value="1">150€</option>
                     <option value="2">250€</option>
@@ -113,7 +113,7 @@
               <!--Textarea-->
               <div class="form-row_textarea">
                 <label class="message-container" for="message">Quelque chose à ajouter ?</label>
-                <textarea name="message" id="message" cols="30" rows="10" placeholder="Parlez-nous de votre projet" class="message-type"></textarea>
+                <input name="message" id="message" type="text" placeholder="Parlez-nous de votre projet" class="message-type"></input>
               </div>
               
               <!--Submit button-->
@@ -132,16 +132,7 @@
   </section><!--start section form-section-->
   
   <div class="container-polygon">
-  </div>
-  <p class="center">
-    <button id="open-modal-test">Test Modal</button>
-  </p>
-  <div id="modal" class="modal">
-    <div class="modal-inner content center">
-      <h2>Félicitations !</h2>
-      <p>Votre demande à été prise en compte. Cliquez à nouveau pour fermer.</p>
-      <button id="close-modal-test">Fermer</button>
-    </div>
+    <img src="./images/timara1.jpg">
   </div>
   
   <!--script js menu start-->
